@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #132945;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 48px 28px 16px 28px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+#navbar-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 0 28px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#navbar-links.active {
+    max-height: 272px;
+}
+
+#hamburger-icon.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+#hamburger-icon.active div:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-icon.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -2px);
+}
+
+.navbar #navbar-links .link {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 16px 12px;
+    color: white;
+    font-size: 24px;
+}
