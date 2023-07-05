@@ -66,3 +66,13 @@
     color: white;
     font-size: 24px;
 }
+
+.navbar .links a{
+    margin-top: 16px;
+    color: #153764;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+}
