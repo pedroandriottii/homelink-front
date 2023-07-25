@@ -46,3 +46,11 @@ section .title h1{
     font-weight: 800;
     text-transform: uppercase;
 }
+
+section .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+}
