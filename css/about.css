@@ -1,5 +1,8 @@
 /* MOBILE */
 
+@media (max-width: 768px) {
+
+
 section .head{
     display: flex;
     background-color: #132945;
@@ -53,4 +56,68 @@ section .cards {
     flex-direction: column;
     margin: 30px;
     gap: 30px;
+}
+}
+
+/* TABLET & DESKTOP */
+@media (min-width: 768px){
+    header div .top-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 26px 28px 26px 28px;
+    }
+
+    section .head {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 100px;
+        align-items: center;
+    }
+
+    section .head h1{
+        color: #153764;
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    section .head img{
+        display: none;
+    }
+
+    section .about-text{
+        transform: translateY(-150px);
+        margin-left: 5%;
+        margin-bottom: -10%;
+    }
+    
+    section .about-text p{
+        width: 70%;
+        transform: translateY(-160px);
+        padding-left: 25px;
+        color: #153764;
+        text-align: left;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+
+    section .title h1{
+        color: #153764;
+        text-align: center;
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    section .cards{
+        display: flex;
+        gap: 30px;
+        justify-content: space-around;
+        margin: 50px;
+    }
 }
