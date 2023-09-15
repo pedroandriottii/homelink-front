@@ -28,6 +28,8 @@ section .mobile-head h1{
     text-transform: uppercase;
     border-bottom: 2px solid #66CCFF;
     padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 section .mobile-about-text{
@@ -80,12 +82,15 @@ section .cards {
     section .mobile-section{
         display: none;
     }
+    section .icon img{
+        display: none;
+    }
 
     section .desktop-head {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 100px 100px;
+        margin: 30px 0px 100px 100px;
         align-items: center;
     }
 
@@ -100,9 +105,7 @@ section .cards {
         padding-bottom: 10px;
     }
 
-    section .icon img{
-        display: none;
-    }
+
 
     
     section .about-text p{
@@ -126,7 +129,8 @@ section .cards {
 
     section .cards{
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 60px;
         justify-content: space-around;
         margin: 50px;
     }
