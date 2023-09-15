@@ -3,7 +3,7 @@
 @media (max-width: 768px) {
 
 
-section .head{
+section .mobile-head{
     display: flex;
     background-color: #132945;
     justify-content: space-around;
@@ -11,13 +11,17 @@ section .head{
     align-items: center;
 }
 
-section .head img{
+section .mobile-head img{
     transform: translateY(20px);
     width: 144px;
     height: 144px;
 }
 
-section .head h1{
+section .desktop-head{
+    display: none;
+}
+
+section .mobile-head h1{
     color: #FFF;
     text-align: right;
     font-size: 20px;
@@ -26,14 +30,14 @@ section .head h1{
     padding-bottom: 8px;
 }
 
-section .about-text{
+section .mobile-about-text{
     display: flex;
     flex-direction: row;
     margin-left: 16px;
     transform: translateY(-40px);
 }
 
-section .about-text p{
+section .mobile-about-text p{
     margin: 40px 20px 0px 20px;
     color: #153764;
     text-align: left;
@@ -59,8 +63,13 @@ section .cards {
 }
 }
 
+
 /* TABLET & DESKTOP */
 @media (min-width: 768px){
+    header .navbar {
+        display: none;
+    }
+
     header div .top-section {
         display: flex;
         flex-direction: row;
@@ -68,36 +77,37 @@ section .cards {
         padding: 26px 28px 26px 28px;
     }
 
-    section .head {
+    section .mobile-section{
+        display: none;
+    }
+
+    section .desktop-head {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 100px 100px;
         align-items: center;
     }
 
-    section .head h1{
+    section .desktop-head h1{
         color: #153764;
-        text-align: center;
+        text-align: left;
         font-size: 36px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         text-transform: uppercase;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
 
-    section .head img{
+    section .icon img{
         display: none;
     }
 
-    section .about-text{
-        transform: translateY(-150px);
-        margin-left: 5%;
-        margin-bottom: -10%;
-    }
     
     section .about-text p{
         width: 70%;
-        transform: translateY(-160px);
-        padding-left: 25px;
+        padding-left: 20px;
         color: #153764;
         text-align: left;
         font-size: 22px;

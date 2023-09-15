@@ -1,122 +1,166 @@
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #132945;
+/* MOBILE */
+@media (max-width: 768px) {
+    .mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #132945;
+    }
+
+    .mobile-top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 48px 28px 16px 28px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 24px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    #hamburger-icon div {
+        width: 24px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s linear;
+    }
+
+    #navbar-links {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        padding: 0 28px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #navbar-links.active {
+        max-height: 272px;
+    }
+
+    #hamburger-icon.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 2px);
+    }
+
+    #hamburger-icon.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger-icon.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -2px);
+    }
+
+    .mobile-navbar #navbar-links .link {
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 16px 12px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .mobile-navbar .mobile-links a{
+        margin-top: 16px;
+        color: #153764;
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    footer{
+        display: flex;
+        background-color: #F5F5F5;
+        flex-direction: row;
+        padding: 23px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    footer .footer-menu a{
+        color: #00000080;
+        text-align: justify;
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: 400;
+        text-decoration-line: underline;
+        padding: 10px;
+    }
+
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+        color: #00000080;
+        text-align: center;
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        align-items: center;
+    }
+
+    footer .footer-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .social{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .desktop-navbar{
+        display: none;
+    }
+    header .desktop-top-section{
+        display: none;
+    }
+    header .links{
+        display: none;
+    }
 }
-
-.top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 48px 28px 16px 28px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-#hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 24px;
-    height: 15px;
-    cursor: pointer;
-}
-
-#hamburger-icon div {
-    width: 24px;
-    height: 3px;
-    background-color: white;
-    transition: all 0.3s linear;
-}
-
-#navbar-links {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    padding: 0 28px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-#navbar-links.active {
-    max-height: 272px;
-}
-
-#hamburger-icon.active div:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 2px);
-}
-
-#hamburger-icon.active div:nth-child(2) {
-    opacity: 0;
-}
-
-#hamburger-icon.active div:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -2px);
-}
-
-.navbar #navbar-links .link {
-    border: 1px solid white;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 16px 12px;
-    color: white;
-    font-size: 24px;
-}
-
-.navbar .links a{
-    margin-top: 16px;
-    color: #153764;
-    text-align: justify;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    text-transform: uppercase;
-}
-
-footer{
-    display: flex;
-    background-color: #F5F5F5;
-    flex-direction: row;
-    padding: 23px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-footer .footer-menu a{
-    color: #00000080;
-    text-align: justify;
-    font-size: 16px;
-    font-family: Arial;
-    font-weight: 400;
-    text-decoration-line: underline;
-    padding: 10px;
-}
-
-footer .copyright{
-    display: flex;
-    justify-content: center;
-    color: #00000080;
-    text-align: center;
-    font-family: Arial;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    align-items: center;
-}
-
-footer .footer-menu{
-    display: flex;
-    flex-direction: column;
-}
-
-footer .social{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 768px){
+    .mobile-navbar{
+        display: none;
+    }
+    .desktop-navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #132945;
+        padding: 20px;
+    }
+    .desktop-navbar .logo{
+        display: flex;
+        padding-left: 50px ;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+        overflow: hidden;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
 }
