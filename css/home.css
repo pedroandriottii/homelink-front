@@ -20,6 +20,8 @@
   line-height: 120%;
   letter-spacing: 1px;
   max-width: 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
 }
 
 .hero .button {
