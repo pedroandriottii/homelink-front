@@ -19,4 +19,4 @@ const incrementCounter = () => {
   }
 };
 
-setInterval(incrementCounter, 50);
+setInterval(incrementCounter, 20);

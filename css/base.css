@@ -1,5 +1,9 @@
 /* MOBILE */
+body{
+    background-color: aliceblue;
+  }
 @media (max-width: 768px) {
+
     .mobile-navbar {
         display: flex;
         flex-direction: column;
@@ -131,6 +135,16 @@
     header .links{
         display: none;
     }
+
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .copyright .locate{
+        font-size: 14px;
+    }
 }
 @media (min-width: 768px){
     .mobile-navbar{
@@ -192,5 +206,15 @@
         font-style: normal;
         font-weight: 700;
         align-items: center;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .copyright .locate{
+        font-size: 14px;
     }
 }
