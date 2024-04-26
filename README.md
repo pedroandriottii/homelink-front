@@ -4,7 +4,7 @@
 - Este projeto foi utilizado para aprender mais sobre HTML e CSS.
 - Este projeto foi Descontinuado para reiniciar utilizando tecnologias mais avançadas como Node, Next.js e React.js que consta no repositório do link a seguir:  https://github.com/pedroandriottii/homelink-fullstack
 
-## This project uses:
+## Esse projeto utiliza:
 
 - HTML
 - CSS
