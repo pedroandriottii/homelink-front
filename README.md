@@ -1,10 +1,19 @@
-# Home Link
+# Home Link Landing Page
 
-Este é um site destinado a minha empresa de Automação Residencial.
-Minha proposta é fazer tudo em HTML/CSS e apenas o necessário em JavaScript, tudo de forma responsiva respeitando o Mobile First, visto que com base nas métricas, 90% dos nossos usuários acessam por SmartPhones.
+- Landing Page para a Home Link Automações - HTML, CSS e JavaScript.
+- Este projeto foi utilizado para aprender mais sobre HTML e CSS.
+- Este projeto foi Descontinuado para reiniciar utilizando tecnologias mais avançadas como Next.js e React.js que consta no repositório do link a seguir:  https://github.com/pedroandriottii/homelink-fullstack
 
-Acompanhe o Site no ar em:
-http://homelinkbr.com
+## This project uses:
 
-Acompanhe também o Instagram da Home Link:
-https://www.instagram.com/homelinkbr/
+- HTML
+- CSS
+- JavaScript
+
+## Autor
+
+* *Pedro Andriotti* 
+
+## Projeto em Funcionamento:
+
+GIF EM BREVE
